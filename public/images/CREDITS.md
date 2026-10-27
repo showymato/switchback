@@ -23,9 +23,25 @@ use the illustrated placeholder (`src/components/vehicles/VehiclePlaceholder.tsx
 until partners upload real photos of their own fleet — see
 `docs/known-limitations.md`.
 
-## Placeholders
+## Landing slot photography
 
-`placeholders/*.jpg` are generated, labeled stand-ins (no third-party content) for
-landing-page slots that still need their own photography: the Cars & SUVs nav tile,
-the scroll and treadmill sequences, and the viewfinder tiles. Replace a file with a
-real photo of the same name and it will be picked up with no code change.
+`landing/*.jpg`, all from Pexels under the [Pexels License](https://www.pexels.com/license/).
+Like the photos above, these are mood photography, not partner listing photos.
+
+| File | Subject | Source |
+|---|---|---|
+| `nav-suvs.jpg` | Black pickup on a misty mountain road, Keylong, Himachal Pradesh | https://www.pexels.com/photo/35888627/ |
+| `scroll-1.jpg` | Royal Enfield Himalayan parked in a green mountain valley | https://www.pexels.com/photo/27539736/ |
+| `scroll-2.jpg` | Vehicles on hairpin switchbacks in mist | https://www.pexels.com/photo/6218156/ |
+| `scroll-3.jpg` | Snow-lined high mountain road, Ladakh | https://www.pexels.com/photo/29494220/ |
+| `treadmill-1.jpg` | Motorcyclist on a dirt road along a mountainside | https://www.pexels.com/photo/5239103/ |
+| `treadmill-2.jpg` | Expedition van in rugged mountain terrain | https://www.pexels.com/photo/37484286/ |
+| `treadmill-3.jpg` | Winding road through the Himalayas | https://www.pexels.com/photo/37835744/ |
+| `viewfinder-1.jpg` | Prayer flags across a mountain slope | https://www.pexels.com/photo/35918299/ |
+| `viewfinder-2.jpg` | Rider's-eye view over a motorcycle cockpit into fog | https://www.pexels.com/photo/38556407/ |
+| `viewfinder-3.jpg` | Snow-covered Himalayan slopes, Spiti | https://www.pexels.com/photo/31306745/ |
+| `viewfinder-4.jpg` | Key Monastery in snow, Spiti Valley | https://www.pexels.com/photo/31307365/ |
+| `viewfinder-5.jpg` | Cliffside road cut into rock, Himalayas | https://www.pexels.com/photo/32261630/ |
+| `viewfinder-6.jpg` | Aerial view of Spiti Valley | https://www.pexels.com/photo/38168221/ |
+
+To swap one, replace the file with another photo of the same name.

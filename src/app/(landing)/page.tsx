@@ -22,17 +22,26 @@ function video(name: string) {
   return fs.existsSync(path.join(process.cwd(), "public", "videos", name)) ? `/videos/${name}` : undefined;
 }
 
-// Placeholder art for slots awaiting their own photography — replace the files in
-// public/images/placeholders/ (same names) to swap in real shots.
-const PH = (name: string) => `/images/placeholders/${name}.jpg`;
+// Landing photography — one file per slot in public/images/landing/ (credits in CREDITS.md).
+const PHOTO = (name: string) => `/images/landing/${name}.jpg`;
 
-const SCROLL_FRAMES: SequenceFrame[] = [1, 2, 3].map((n) => ({ src: PH(`scroll-${n}`), position: "50% 50%" }));
+const SCROLL_FRAMES: SequenceFrame[] = [
+  { src: PHOTO("scroll-1"), position: "55% 60%" },
+  { src: PHOTO("scroll-2"), position: "50% 70%" },
+  { src: PHOTO("scroll-3"), position: "50% 55%" },
+];
 
-const TREADMILL_FRAMES: SequenceFrame[] = [1, 2, 3].map((n) => ({ src: PH(`treadmill-${n}`), position: "50% 50%" }));
+const TREADMILL_FRAMES: SequenceFrame[] = [
+  { src: PHOTO("treadmill-1"), position: "60% 70%" },
+  { src: PHOTO("treadmill-2"), position: "50% 78%" },
+  { src: PHOTO("treadmill-3"), position: "50% 60%" },
+];
+
+const VIEWFINDER_POSITIONS = ["50% 80%", "50% 75%", "50% 40%", "70% 45%", "50% 55%", "50% 50%"];
 
 const VIEWFINDER_TILES = Array.from({ length: 12 }, (_, i): SequenceFrame => ({
-  src: PH(`viewfinder-${(i % 6) + 1}`),
-  position: "50% 50%",
+  src: PHOTO(`viewfinder-${(i % 6) + 1}`),
+  position: VIEWFINDER_POSITIONS[i % 6],
 }));
 
 // Seconds → fraction of a 12.8s sequence, mirroring the original key timings.

@@ -6,7 +6,7 @@ import "./landing.css";
 
 const PRODUCTS: NavProduct[] = [
   { href: "/motorcycles", title: "Motorcycles", subtitle: "Bikes", image: "/images/hero-himalaya.jpg", imagePosition: "70% 45%" },
-  { href: "/suvs", title: "Cars & SUVs", subtitle: "4 wheels", image: "/images/placeholders/nav-suvs.jpg" },
+  { href: "/suvs", title: "Cars & SUVs", subtitle: "4 wheels", image: "/images/landing/nav-suvs.jpg", imagePosition: "50% 65%" },
 ];
 
 const LINKS: NavLink[] = [
